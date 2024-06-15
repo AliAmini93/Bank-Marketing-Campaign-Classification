@@ -56,4 +56,13 @@ The dataset used in this repository comes from a bank marketing campaign. The go
   - AUPRC (Average Precision Score)
   - ROC AUC
   - Confusion Matrix
+## Outcome
+The project identified several key findings:
 
+- **Label Encoding** proved to be more effective compared to other encoding methods.
+- **Calibrated Probability** method performed better than SMOTETomek and Class Weights in addressing the imbalanced classification problem.
+- **Mutual Information (MI)** as the feature selection strategy enhanced the AUPRC compared to Pearson Correlation.
+- The **number of trials for optimization** was set to 5, reducing execution time and resources.
+- **KNN with 10 out of 17 features** using MI feature selection achieved a 100% AUPRC, demonstrating the highest performance among the models and feature selection strategies evaluated.
+
+This comprehensive approach to handling imbalanced classification, optimizing feature selection, and tuning model hyperparameters has led to significant improvements in predictive performance for the bank marketing campaign dataset.
